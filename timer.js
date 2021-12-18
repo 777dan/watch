@@ -33,12 +33,12 @@ function timer(date_in_future) {
     // Если время истекло, показать сообщение
     if (ms < 0) {
         //clearInterval(x);
-        document.getElementById("time").innerHTML = "Время истекло!";
+        document.getElementById("timer").innerHTML = "Время истекло!";
     }
 }
 
 function start() {
     // Установить дату и время в будущем
-    let date_in_future = new Date(2022, 11, 11, 12, 27, 0); // 1.01.2020, 10:32:04
+    let date_in_future = new Date(2021, 11, 18, 09, 30, 0); // 1.01.2020, 10:32:04
     x = setInterval(timer.bind(this, date_in_future), 1000);
 }
